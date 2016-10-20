@@ -3,10 +3,15 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+}
+
+clean.doFirst {
+    delete "${rootDir}/api-library/auto-generated-classes/"
+    println "${rootDir}/api-library/auto-generated-classes/"
 }
 
 dependencies {
@@ -23,6 +28,9 @@ dependencies {
     compile group: 'org.apache.lucene', name: 'lucene-queryparser', version: '6.2.1'
 // https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser
     compile group: 'org.apache.lucene', name: 'lucene-queryparser', version: '6.2.1'
-
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+// https://mvnrepository.com/artifact/commons-collections/commons-collections
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.0'
 
 }

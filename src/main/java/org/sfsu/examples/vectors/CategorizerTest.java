@@ -1,4 +1,4 @@
-package lia.chapter5;
+package org.sfsu.examples.vectors;
 
 /**
  * Copyright Manning Publications Co.
@@ -37,7 +37,7 @@ public class CategorizerTest extends TestCase {
         categoryMap = new TreeMap();
 
         buildCategoryVectors();
-    //dumpCategoryVectors();
+    dumpCategoryVectors();
     }
 
     public void testCategorization() throws Exception {
@@ -71,7 +71,7 @@ public class CategorizerTest extends TestCase {
         for (int i = 0; i < maxDoc; i++) {
             Document doc = reader.document(i);
             String category = doc.get("category");
-            System.out.println("\n"+doc.get("subject")+"\n");
+            System.out.println(category +"\n"+doc.get("subject")+"\n");
             Map vectorMap = (Map) categoryMap.get(category);
             if (vectorMap == null) {
                 vectorMap = new TreeMap();

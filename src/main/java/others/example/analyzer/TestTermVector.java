@@ -3,6 +3,9 @@ package others.example.analyzer;
 /**
  * Created by rajanishivarajmaski1 on 10/12/16.
  * http://makble.com/what-is-term-vector-in-lucene
+ *
+ * TODO:  implement http://stackoverflow.com/questions/9189179/extract-tf-idf-vectors-with-lucene
+ *
  */
 
 import lia.common.Utils;
