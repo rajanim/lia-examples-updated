@@ -113,6 +113,7 @@ public class Utils {
      */
     public static FieldType getTextFieldTypeWithTermVectors() {
         FieldType fieldType = new FieldType();
+        fieldType.setDocValuesType(DocValuesType.NUMERIC);
         fieldType.setStored(true);
         fieldType.setStoreTermVectors(true);
         IndexOptions value = IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS;
