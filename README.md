@@ -1,4 +1,6 @@
-# From 'Lucene In Action(lia) edition 2' 
+# 
+
+From Lucene In Action(lia),  edition 2
 
 Source code snippets from text book, updated to latest Lucene version.
 
